@@ -93,7 +93,7 @@ merged2.Identification = np.where(merged2["Cust PO Nbr"].str.contains("HASH"), "
 "ACTIVATION", np.where(merged2["Cust PO Nbr"].str.contains("SOCKS"), "DP SOCKS", np.where(merged2["Cust PO Nbr"].str.contains("REFIT"), "REFIT",
 np.where(merged2["Cust PO Nbr"].str.contains("open"), "STORE OPENING", np.where(merged2["Cust PO Nbr"].str.contains("STAFF"), "STAFF DRESS",
 np.where(merged2["Cust PO Nbr"].str.contains("GLV"), "GLOBAL VISIT", np.where(merged2["Cust PO Nbr"].str.contains("BACKW"), "BACK WALL",
-np.where(merged2["Cust PO Nbr"].str.contains("INIT"), "INITIAVE", np.where(merged2["REPLEN"].str.contains("R"), "REPLEN", "OTHERS"))))))))))
+np.where(merged2["Cust PO Nbr"].str.contains("INIT"), "INITIATIVE", np.where(merged2["REPLEN"].str.contains("R"), "REPLEN", "OTHERS"))))))))))
 
 # Merge file with store master to get store/country/ship-to/ip/region information
 
